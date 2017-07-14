@@ -30,7 +30,7 @@
       <thead>
         <tr>
           <th>商家</th>
-          <th>VPS名称</th>
+          <th>VPS型号</th>
           <th>VPS信息</th>
           <th>库存</th>
           <th>更新时间</th>
