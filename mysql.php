@@ -13,7 +13,7 @@ class mysql {
 	protected $host = 'localhost'; //链接地址
 	protected $dbname = 'vpsstock'; //数据库名称
 	protected $dbuser = 'root'; //数据库用户名
-	protected $dbpwd = '2130521'; //数据库密码
+	protected $dbpwd = '123456'; //数据库密码
 	//链接数据库
 	public function db() {
 		//链接数据库
