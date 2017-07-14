@@ -29,15 +29,13 @@ class getinfo {
 				$uptime = date('Y-m-d H:i:s', time()); //更新时间
 				$db = new mysql;
 				$dbinfo = $db->updatedb($id, $state, $uptime);
-				return $dbinfo;
 			} else {
-				//无货
+				//有货
 				$id = $value['id'];
 				$state = '0'; //0有货
 				$uptime = date('Y-m-d H:i:s', time()); //更新时间
 				$db = new mysql;
 				$dbinfo = $db->updatedb($id, $state, $uptime);
-				return $dbinfo;
 			}
 		}
 	}
