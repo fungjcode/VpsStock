@@ -1,8 +1,10 @@
 <?php
 /*
- * 获取相关VPS网页信息数据
+ * 风之翼灵
+ * www.fungj.com
+ * 各种方法
  */
-include 'mysql.php';
+include 'mysql.php'; //引用数据库
 class getinfo {
 	//读取数据库信息
 	public function readsql() {
@@ -27,6 +29,7 @@ class getinfo {
 				$uptime = date('Y-m-d H:i:s', time()); //更新时间
 				$db = new mysql;
 				$dbinfo = $db->updatedb($id, $state, $uptime);
+				return $dbinfo;
 			} else {
 				//无货
 				$id = $value['id'];
@@ -34,11 +37,14 @@ class getinfo {
 				$uptime = date('Y-m-d H:i:s', time()); //更新时间
 				$db = new mysql;
 				$dbinfo = $db->updatedb($id, $state, $uptime);
+				return $dbinfo;
 			}
 		}
 	}
 }
-//执行方法，更新数据
+
+//更新数据
 $a = new getinfo;
 $b = $a->update();
+
 ?>

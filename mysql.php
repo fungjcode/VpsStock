@@ -1,12 +1,14 @@
 <?php
 /*
+ * 风之翼灵
+ * www.fungj.com
  * mysql链接
  */
 
 class mysql {
 	//数据库配置
 	/*修改下面配置为你自己的链接
-	* mysql端口默认3306
+	* mysql端口默认3306并确认服务器MYSQL PDO支持
 	*/
 	protected $host = 'localhost'; //链接地址
 	protected $dbname = 'vpsstock'; //数据库名称
