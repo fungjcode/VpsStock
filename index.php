@@ -1,3 +1,11 @@
+<?php
+include 'mysql.php';
+$db = new mysql;
+$dbinfo = $db->db();
+?>
+<?php
+if (!dbinfo) {
+	?>
 <!doctype html>
 <html class="no-js">
 <head>
@@ -39,24 +47,21 @@
       </thead>
       <tbody>
 <?php
-include 'mysql.php';
-$db = new mysql;
-$dbinfo = $db->db();
 foreach ($dbinfo as $key => $value) {
-	echo '<tr>';
-	echo "<td>{$value['sellername']}</td>";
-	echo "<td>{$value['vpstitle']}</td>";
-	echo "<td>{$value['vpsinfo']}</td>";
-	if ($value['state'] == '0') {
-		echo '<td><span class="am-badge am-badge-success am-radius">有货</span></td>';
-	} elseif ($value['state'] == '1') {
-		echo '<td><span class="am-badge am-badge-warning am-radius">缺货</span></td>';
+		echo '<tr>';
+		echo "<td>{$value['sellername']}</td>";
+		echo "<td>{$value['vpstitle']}</td>";
+		echo "<td>{$value['vpsinfo']}</td>";
+		if ($value['state'] == '0') {
+			echo '<td><span class="am-badge am-badge-success am-radius">有货</span></td>';
+		} elseif ($value['state'] == '1') {
+			echo '<td><span class="am-badge am-badge-warning am-radius">缺货</span></td>';
+		}
+		echo "<td>{$value['uptime']}</td>";
+		echo "<td><a class='am-badge am-badge-primary am-round' target=\"_top\" href=\"{$value['buylink']}\">购买</a> <a class='am-badge am-badge-success am-round' href=\"#\">订阅</a></td>";
+		echo '</tr>';
 	}
-	echo "<td>{$value['uptime']}</td>";
-	echo "<td><a class='am-badge am-badge-primary am-round' target=\"_top\" href=\"{$value['buylink']}\">购买</a> <a class='am-badge am-badge-success am-round' href=\"#\">订阅</a></td>";
-	echo '</tr>';
-}
-?>
+	?>
       </tbody>
     </table>
   </div>
@@ -86,3 +91,8 @@ foreach ($dbinfo as $key => $value) {
   <script src="./js/amazeui.min.js"></script>
 </body>
 </html>
+<?php
+} else {
+	echo '数据库链接失败,请检查数据库配置';
+}
+?>
