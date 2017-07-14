@@ -22,15 +22,23 @@ class getinfo {
 			preg_match('|<h1>(.*?)<\/h1>|i', $html, $m);
 			if ($m['1'] == 'Oops, there\'s a problem...') {
 				//无货
-				return false;
+				$id = $value['id'];
+				$state = '1'; //1无货
+				$uptime = date('Y-m-d H:i:s', time()); //更新时间
+				$db = new mysql;
+				$dbinfo = $db->updatedb($id, $state, $uptime);
 			} else {
-				//有货
-				return true;
+				//无货
+				$id = $value['id'];
+				$state = '0'; //0有货
+				$uptime = date('Y-m-d H:i:s', time()); //更新时间
+				$db = new mysql;
+				$dbinfo = $db->updatedb($id, $state, $uptime);
 			}
 		}
 	}
 }
-
+//执行方法，更新数据
 $a = new getinfo;
 $b = $a->update();
 ?>
