@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="VPS产品库存监控">
+  <meta name="keywords" content="VPS产品库存监控">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>VPS库存监控 - 风之翼灵 www.fungj.com</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="stylesheet" href="./css/amazeui.min.css">
+  <link rel="stylesheet" href="./css/app.css"></head>
+<body>
+  <div class="am-g am-g-fixed am-margin-top">
+    <div class="am-u-sm-12">
+      <h1>VPS库存监控</h1>
+      <p>请查看您感兴趣的VPS产品存库哟，如需要其他商家的VPS监控信息，请告诉我 office#fungj.com</p>
+    </div>
+  </div>
+  <br />
+  <div class="am-g am-g-fixed">
+    <table class="am-table am-table-striped am-table-hover">
+      <thead>
+        <tr>
+          <th>商家</th>
+          <th>VPS名称</th>
+          <th>VPS信息</th>
+          <th>库存</th>
+          <th>更新时间</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Amaze UI</td>
+          <td>http://amazeui.org</td>
+          <td>2012-10-01</td>
+        </tr>
+        <tr>
+          <td>Amaze UI</td>
+          <td>http://amazeui.org</td>
+          <td>2012-10-01</td>
+        </tr>
+        <tr>
+          <td>Amaze UI(Active)</td>
+          <td>http://amazeui.org</td>
+          <td>2012-10-01</td>
+        </tr>
+        <tr>
+          <td>Amaze UI</td>
+          <td>http://amazeui.org</td>
+          <td>2012-10-01</td>
+        </tr>
+        <tr>
+          <td>Amaze UI</td>
+          <td>http://amazeui.org</td>
+          <td>2012-10-01</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer data-am-widget="footer"
+          class="am-footer am-footer-default"
+           data-am-footer="{  }">
+    <div class="am-footer-miscs ">
+
+      <p>
+        由
+        <a href="https://www.fungj.com/" title="风之翼灵"
+                                                target="_blank" class="">风之翼灵</a>
+        开发
+      </p>
+      <p>CopyRight©2017  Fungj.com</p>
+      <p>滇ICP备06001881号-2</p>
+    </div>
+  </footer>
+
+  <div id="am-footer-modal"
+       class="am-modal am-modal-no-btn am-switch-mode-m am-switch-mode-m-default">
+    <div class="am-modal-dialog">
+      <div class="am-modal-hd am-modal-footer-hd">
+        <a href="javascript:void(0)" data-dismiss="modal" class="am-close am-close-spin " data-am-modal-close>&times;</a>
+      </div>
+      <div class="am-modal-bd">
+        您正在浏览的是
+        <span class="am-switch-mode-owner">云适配</span>
+
+        <span class="am-switch-mode-slogan">为您当前手机订制的移动网站。</span>
+      </div>
+    </div>
+  </div>
+
+  <!--[if (gte IE 9)|!(IE)]>
+  <!-->
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+  <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+  <script src="./js/amazeui.min.js"></script>
+</body>
+</html>
