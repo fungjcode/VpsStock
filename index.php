@@ -11,8 +11,8 @@ if ($dbinfo != false) {
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="VPS产品库存监控">
-  <meta name="keywords" content="VPS产品库存监控">
+  <meta name="description" content="风之翼灵VPS商家产品库存监控系统">
+  <meta name="keywords" content="VPS,库存,监控，xvmlabs vps">
   <meta name="viewport"
         content="width=device-width, initial-scale=1">
   <title>VPS库存监控 - 风之翼灵 www.fungj.com</title>
@@ -22,7 +22,7 @@ if ($dbinfo != false) {
 
   <!-- No Baidu Siteapp-->
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
-
+  <link rel="icon" type="image/ico" href="./favicon.ico">
   <link rel="stylesheet" href="./css/amazeui.min.css">
   <link rel="stylesheet" href="./css/app.css"></head>
 <body>
