@@ -4,7 +4,7 @@
 
 ## 安装 ##
 
-还原DB目录下的数据问题，修改mylsql.php文件下的数据库配置。
+还原DB目录下的数据库文件，并修改mylsql.php文件下的数据库配置。
 
 ## 自动更新 ##
 linux设置定时任务，将 http://youhostname/function.php 加入计划中即可（建议5分钟执行一次）。
