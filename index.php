@@ -4,7 +4,7 @@ $db = new mysql;
 $dbinfo = $db->db();
 ?>
 <?php
-if (!dbinfo) {
+if ($dbinfo != false) {
 	?>
 <!doctype html>
 <html class="no-js">
@@ -37,9 +37,9 @@ if (!dbinfo) {
     <table class="am-table am-table-striped am-table-hover">
       <thead>
         <tr>
-          <th>商家</th>
+          <th class="am-hide-sm-down">商家</th>
           <th>VPS型号</th>
-          <th>VPS信息</th>
+          <th class="am-hide-sm-down">VPS信息</th>
           <th>库存</th>
           <th>更新时间</th>
           <th>操作</th>
@@ -49,9 +49,9 @@ if (!dbinfo) {
 <?php
 foreach ($dbinfo as $key => $value) {
 		echo '<tr>';
-		echo "<td>{$value['sellername']}</td>";
+		echo "<td class=\"am-hide-sm-down\">{$value['sellername']}</td>";
 		echo "<td>{$value['vpstitle']}</td>";
-		echo "<td>{$value['vpsinfo']}</td>";
+		echo "<td class=\"am-hide-sm-down\">{$value['vpsinfo']}</td>";
 		if ($value['state'] == '0') {
 			echo '<td><span class="am-badge am-badge-success am-radius">有货</span></td>';
 		} elseif ($value['state'] == '1') {
