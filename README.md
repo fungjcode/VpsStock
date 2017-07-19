@@ -10,3 +10,6 @@
 linux设置定时任务，将 http://youhostname/function.php 加入计划中即可（建议5分钟执行一次）。
 
 目前加入了xvmlabs的监控，其他家的没看，因为个人现在在等待xvmlabs的小鸡。
+
+## 演示 ##
+http://vps.fungj.com
