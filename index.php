@@ -29,7 +29,7 @@ if ($dbinfo != false) {
   <div class="am-g am-g-fixed am-margin-top">
     <div class="am-u-sm-12">
       <h1>VPS库存监控</h1>
-      <p>请查看您感兴趣的VPS产品存库哟，如需要其他商家的VPS监控信息，请告诉我 office#fungj.com</p>
+      <p>查看您感兴趣的VPS产品存库，如需要其他商家的VPS监控信息，请告诉我 office#fungj.com</p>
     </div>
   </div>
   <br />
@@ -78,6 +78,7 @@ foreach ($dbinfo as $key => $value) {
       </p>
       <p>CopyRight©2017  Fungj.com</p>
       <p>滇ICP备06001881号-2</p>
+      <p><script src="https://s19.cnzz.com/z_stat.php?id=4887446&web_id=4887446" language="JavaScript"></script></p>
     </div>
   </footer>
   <!--[if (gte IE 9)|!(IE)]>
